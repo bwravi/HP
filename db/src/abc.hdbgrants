@@ -1,0 +1,52 @@
+{
+  "ext_schema":{
+    "object_owner":{
+      "schema_privileges":[  
+        {  
+          "reference": "TRAINING",
+          "privileges_with_grant_option":["SELECT"]
+        },
+        {  
+          "reference": "RAVI",
+          "privileges_with_grant_option":["SELECT","EXECUTE"]
+        }
+      ],
+      "object_privileges":[
+        {
+          "schema":"EPM_MODEL",
+          "name":"SNWD_SO",
+          "privileges_with_grant_option":["SELECT"]
+        },
+                {
+          "schema":"EPM_MODEL",
+          "name":"SNWD_SO_I",
+		  "privileges_with_grant_option":["SELECT"]
+        }
+      ]
+    },
+    "application_user":{
+      "schema_privileges":[ 
+        { 
+          "reference":"TRAINING",
+          "privileges":["SELECT", "SELECT METADATA"]
+        },
+                {  
+          "reference": "RAVI",
+          "privileges_with_grant_option":["SELECT","EXECUTE"]
+        }
+      ],
+      "object_privileges":[
+        {
+          "schema":"EPM_MODEL",
+          "name":"SNWD_SO",
+          "privileges":["SELECT"]
+        },
+        {
+          "schema":"EPM_MODEL",
+          "name":"SNWD_SO_I",
+          "privileges":["SELECT"]
+        }
+      ]
+    }
+  }
+}

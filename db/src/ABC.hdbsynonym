@@ -1,0 +1,8 @@
+{
+  "PROJ15.db::ORDERS": {
+    "target": {
+      "object": "ORDERS",
+      "schema": "RAVI"
+    }
+  }
+}
